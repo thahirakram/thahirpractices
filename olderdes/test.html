@@ -1,0 +1,89 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
+        <style>
+            body {
+                background-image: url("shdw.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: 'Arsenal', sans-serif;
+            }
+
+            .login-form label,
+            .login-form .form-hd {
+                color: white;
+                text-align: center;
+            }
+
+            .login-form {
+                box-shadow: 0 0 50px #333;
+                border-radius: 10px;
+                width: 80%;
+                height: 550px;
+            }
+
+            .login-form:hover {
+                box-shadow: 0 0 70px #000;
+            }
+
+            .login-form .btn-pink {
+                background-color: #E91E63;
+                border: 1px solid #E91E63;
+                color: white;
+            }
+
+            @media(max-width: 400px) {
+                .login-form {
+                    width: 100%;
+                }
+            }
+        </style>
+        <body>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-md-6 offset-md-3">
+                        <form class="login-form p-5 p-xs-2 mx-auto mt-5">
+                            <h2 class="form-hd">Shadow Login Form</h2>
+                            <div class="form-group mt-5">
+                                <label>User Name</label>
+                                <input class="form-control" type="text" name="username">
+                            </div>
+                            <div class="form-group mt-5">
+                                <label>Password</label> 
+                                <input class="form-control" type="password" name="username">
+                            </div>
+                            <div class="form-group mt-5">
+                                <label><input type="checkbox"> Remember Me</label>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-pink mt-4">Submit</button>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+
+            <!-- <div class="logindiv">
+                    <h1 class="titletop">Shadow Login Form</h1>
+               <div class="inputdiv">
+                   <label class="labeltext1">User Name</label><br>
+                   <input class="textbox1" type="text">
+                   <label class="labeltext2">Password</label><br>
+                   <input class="textbox2" type="text">
+                   <div class="checkdivbox">
+                   <p class="paracheckbox"><input class="checkbox1" type="checkbox">  Remeber me?</p>
+                   </div>
+                   <button class="submitbutton">Login</button>
+                   <div class="divpassword"> 
+                   <a class="frgetpass" href="#">Forgot Password?</a>
+                   </div>
+                   </div>
+                   </div>
+               </div>   
+               </div>     
+               </div>     -->
+
+        </body>
