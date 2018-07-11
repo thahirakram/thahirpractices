@@ -12,26 +12,62 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <style>
 body {
     background-image: url("bg2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100v;
 }
-.navbg-color {
-    background-color: rgb(189, 189, 189); 
+.navbar-heading {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+.nav-letter1 {
+    color: rgb(0, 160, 223);
+}
+.nav-letter2 {
+    color: rgb(57, 57, 163);
+}
+.nav-letter3 {
+    color: rgb(235, 6, 6);
 }
 </style>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
-                <a class="navbar-brand" href="#">Logo</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 p-1">
+                <a class="navbar-heading navbar-brand" href="#">
+    <img src="BMW-logo.png" width="40" height="40" class="d-inline-block" alt=""> <span class="nav-letter1">B</span><span class="nav-letter2">M</span><span class="nav-letter3">W</span>
+                </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Models</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cars</a>
+                  </li>
+                </ul>
+            </div>
+            <form class="form-inline">    
+            <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+        </form>                        
             </nav>
+           
+                  
         </div>
     </div>
 </body>
