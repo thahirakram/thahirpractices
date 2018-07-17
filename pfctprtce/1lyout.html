@@ -16,10 +16,13 @@
         crossorigin="anonymous">
     <style>
         body {
-            background-image: url("460d0f3758b465a3f3ff1b2af0a2c6ba.jpg");
+            background: #0F2027;
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .navbar-heading {
             font-weight: bold;
             font-style: italic;
@@ -29,8 +32,19 @@
         #carouselIndicators img {
             height: 100vh;
         }
+
         .carousel-text {
             color: rgb(255, 255, 255);
+        }
+        .carousel-control-prev-icon ,.carousel-control-next-icon { 
+            border: 2px solid white;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(55, 2, 124);
+            border-radius: 80%;
+        }
+        .zoom:hover {
+            transform: scale(1.1); 
         }
     </style>
 
@@ -66,7 +80,6 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
             </form>
         </nav>
-
         <section>
             <div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -76,7 +89,8 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="Full-Hd-For-Bmw-Bayerische-Motoren-Werke-Car-Wallpaper-Background-Screen-Pics-Laptop.jpg" alt="First slide">
+                        <img class="d-block w-100" src="Full-Hd-For-Bmw-Bayerische-Motoren-Werke-Car-Wallpaper-Background-Screen-Pics-Laptop.jpg"
+                            alt="First slide">
                         <div class="carousel-caption carousel-text">
                             <h1 class="display-3 font-italic">vertisize</h1>
                         </div>
@@ -106,58 +120,68 @@
         </section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mt-5 text-white text-center">
+                <div class="zoom col-lg-4 mt-5 text-white text-center">
                     <img class="rounded-circle" src="bmw-e36-wallpaper-19.jpg" width="250" height="250">
                     <h3 class="mt-3">AWESOMECAR</h2>
                         <p>this is car and this is car.</p>
                         <p class="btn btn-secondary" href="#" role="button">More >>></p>
                 </div>
-                <div class="col-lg-4 mt-5 text-white text-center">
+                <div class="zoom col-lg-4 mt-5 text-white text-center">
                     <img class="rounded-circle" src="bmw_z3_black_front_wet_79696_1920x1080.jpg" width="250" height="250">
                     <h3 class="mt-3">AWESOMECAR</h2>
                         <p>this is car and this is car.</p>
                         <p class="btn btn-secondary" href="#" role="button">More >>></p>
                 </div>
-                <div class="col-lg-4 mt-5 text-white text-center">
+                <div class="zoom col-lg-4 mt-5 text-white text-center">
                     <img class="rounded-circle" src="62980920-bmw-wallpapers.jpg" width="250" height="250">
                     <h3 class="mt-3">AWESOMECAR</h2>
                         <p>this is car and this is car.</p>
                         <p class="btn btn-secondary" href="#" role="button">More >>></p>
                 </div>
-                <div class="col-lg-4 mt-5 text-white text-center">
+                <div class="zoom col-lg-4 mt-5 text-white text-center">
                     <img class="rounded-circle" src="5 bmw car wallpaper.jpg" width="250" height="250">
                     <h3 class="mt-3">AWESOMECAR</h2>
                         <p>this is car and this is car.</p>
                         <p class="btn btn-secondary" href="#" role="button">More >>></p>
                 </div>
-                <div class="col-lg-4 mt-5 text-white text-center">
+                <div class="zoom col-lg-4 mt-5 text-white text-center">
                     <img class="rounded-circle" src="bmw-backgrounds-Is-Cool-Wallpapers.jpg" width="250" height="250">
                     <h3 class="mt-3">AWESOMECAR</h2>
                         <p>this is car and this is car.</p>
                         <p class="btn btn-secondary" href="#" role="button">More >>></p>
                 </div>
-                <div class="col-lg-4 mt-5 text-white text-center">
+                <div class="zoom col-lg-4 mt-5 text-white text-center">
                     <img class="rounded-circle" src="28333hd.jpg" width="250" height="250">
                     <h3 class="mt-3">AWESOMECAR</h2>
                         <p>this is car and this is car.</p>
                         <p class="btn btn-secondary" href="#" role="button">More >>></p>
-                </div>
-                <hr class="divider">
-                <div class="row bg-dark text-white">
-                    <div class="col-lg-7">
-                        <h2 class="mt-5 ml-2 text-capitalize">This paragraph will be printed soon.</h2>
-                        <p class="lead ml-2">BMW special editions are released got a luxury look inside and automatic transmission.</p>
                     </div>
-                    <div class="col-lg-5">
-                        <img class="img" src="2018_bmw_1-series_37.jpg&dim=2560x1440&make=bmw" style="width: 700px; height: 500px;">
+                    <div class="row mx-auto mt-5 text-white">
+                        <div class="col-md-7 text-center">
+                            <h1>SMOKIE CARS</h1>
+                            <p class="lead">This cars are altered by torque motors and one of the special editions of cars are altered here only and these designd of cars are looking good.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="zoom img-fluid mx-auto" alt="500x500" style="width: 500px; height: 300px;" src="bmw-wallpapers-wide-Is-Cool-Wallpapers.jpg">
+                        </div>
                     </div>
-                </div>
-            </div>    
+
+                    <div class="row mx-auto mt-5 text-white">
+                            <div class="col-md-5">
+                                <img class="zoom img-fluid mx-auto" alt="500x500" style="width: 500px; height: 300px;" src="bmw-backgrounds-Is-Cool-Wallpapers.jpg">
+                            </div>
+                            <div class="col-md-7 text-center">
+                                    <h1>SMOKIE CARS</h1>
+                                    <p class="lead">This cars are altered by torque motors and one of the special editions of cars are altered here only and these designd of cars are looking good.</p>
+                                </div>    
+                        </div>
+                    
             </div>
-
         </div>
-        </div>
-
+        <footer class="container-fluid bg-white mt-5 h-25">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2017-2018 Company, Inc. <a href="#">Privacy</a> <a href="#">Terms</a></p>
+              </footer>
 
 
     </body>
