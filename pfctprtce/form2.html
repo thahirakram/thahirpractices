@@ -26,25 +26,22 @@
     </style>
     </head>
     <body>
-        <form class="col-lg-6 mx-auto">
-            <h1 class="font-weight-bold text-center mt-3 hd-title">Inplant Training</h1>
+        <form class="col-lg-6 mx-auto mt-5">
+            <a href="#">Back to home</a>
+            <h1 class="font-weight-bold text-center mt-3 hd-title">Inplant Training Registration</h1>
             <div class="row mt-4">
                 <div class="col">
                     <div class="form-group row">
                         <label for="students" class="col-form-label"></label>
                         <div class="col-sm-12">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle w-100 btndrp" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">Batch</button>
-                                <div class="dropdown-menu w-100" aria-labelledby="dropdown">
-                                    <a class="dropdown-item" href="#">Batch1 (19/7/2018 - 22/7/2018)</a>
-                                    <a class="dropdown-item" href="#">Batch2</a>
-                                    <a class="dropdown-item" href="#">Batch3</a>
-                                </div>
-                            </div>
+                         <select class="custom-select custom-select-md w-100 p-2">
+                             <option value="1">Batch1</option>
+                             <option value="1">Batch2</option>
+                             <option value="1">Batch3</option>
+                         </select>
+                        </div>
                         </div>
                     </div>
-                </div>
                 <div class="col">
                     <div class="form-group row">
                         <label for="students" class="col-form-label"></label>
@@ -322,7 +319,7 @@
             </fieldset>
             <button type="button" class="btn btn-danger btn-md mb-5">
                     <i class="fas fa-sync"></i> Reset</button>
-                <button type="button" class="btn btn-success float-right mb-5">
+                <button type="submit" class="btn btn-success float-right mb-5">
                     <i class="fas fa-registered"></i> Register</button>
         </form>
     </body>
