@@ -1,0 +1,59 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
+        <style>
+            body {
+                background: #141E30;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #243B55, #141E30);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #243B55, #141E30);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+            }
+
+            .trey {
+                background: #141E30;
+                background: -webkit-linear-gradient(to right, #243B55, #141E30);
+                background: linear-gradient(to right, #243B55, #141E30);               
+                margin-top: 100px;
+                color: white;
+                border-radius: 5px;
+                transition: 0.5s;
+            }
+            .trey:hover {
+                box-shadow: 0 0 70px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div clas="container-fluid">
+            <div class="row">
+                <div class="trey col-md-6 col-lg-4 mx-auto bg-light h-75">
+                    <form class="login-form p-4">
+                        <h4 class="display-4 text-center">Bonkerz</h4>
+                        <div class="form-group mt-3">
+                            <label>Email</label>
+                            <input class="form-control" type="text" name="email" required>
+                        </div>
+                        <div class="form-group mt-4">
+                            <label>Password</label>
+                            <input class="form-control" type="text" name="password" required>
+                        </div>
+                        <div class="form-group mt-4">
+                            <label> <input type="checkbox" name="checkbox"> Remember me?</label>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-md">log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
