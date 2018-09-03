@@ -1,13 +1,19 @@
 <html>
-
+    
 <body>
-    <ul id='ls1'>
-
-    </ul>
+    <div id='mylist'></div>
     <script>
         'use strict'
-        var a = ['thahir', 'musthaq', 'rishi'];
+        var a = ['abbas', 'thahir', 'fazil'];
+        var ul = document.createElement('ul');
+        document.getElementById('mylist').appendChild(ul);
+
+        a.forEach(function (a) {
+            var li = document.createElement('li');
+            ul.appendChild(li);
+            li.innerHTML += a;
+        }); 
     </script>
 </body>
 
-</html>2
+</html>

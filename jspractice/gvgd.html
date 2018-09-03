@@ -1,0 +1,18 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div id="myList"></div>
+		<script>
+		var a = ['vitosh','academy','dot','com'];
+		var ul = document.createElement('ul');
+		document.getElementById('myList').appendChild(ul);	
+
+		a.forEach(function (a) {
+			var li = document.createElement('li');
+			ul.appendChild(li);
+			li.innerHTML += a;
+		});
+		</script>
+	</body>
+</html>
