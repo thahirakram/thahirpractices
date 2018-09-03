@@ -1,0 +1,37 @@
+<html>
+<style>
+</style>
+
+<body>
+    <script>
+        var t = [
+            { "name": "Mount Everest", "height": 8848, "country": "Nepal" },
+            { "name": "Mount Rushmore", "height": 18, "country": "USA" }
+        ];
+        function createTable() {
+            var table = document.createElement('table');
+            table.className = 'tabledesign';
+            var head = document.createElement('thead');
+            var body = document.createElemnt('tbody');
+            var headrow = document.createElement('tr');
+            ['Name', 'Height', 'country'].forEach(function (tab) {
+                var th = document.createElement('th');
+                th.appendChild(document.createTextNode(tab));
+                headrow.appenChild(th);
+            });
+            head
+        }
+
+    </script>
+</body>
+
+</html>
+<!-- // var a = ['Thahir', 'Rishi', 'Mothil'];
+//     function createTable() {
+//         var b = document.createElement('table');
+//         b.setAttribute('id', 'mytab');
+
+//         var c = document.createElement('th');
+//         b.appendChild(c);
+        
+//      -->

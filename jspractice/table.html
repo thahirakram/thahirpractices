@@ -1,12 +1,13 @@
 <html>
 <style>
-    table,td {
-         border : 1px solid greenyellow;
+    table, td {
+        border: 1px solid green;
     }
 </style>
-<button onclick='table()'>create Table</button>
+
 <body>
     <script>
+    
         'use srtict'
         function table() {
         var t = document.createElement('Table');
@@ -23,7 +24,10 @@
         document.getElementById('tabrow').appendChild(b);
         var row =  Table.insertRow(0);
         }
+        table();
     </script>
 </body>
 
 </html>
+
+
