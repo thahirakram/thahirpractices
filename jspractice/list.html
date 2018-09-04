@@ -7,20 +7,20 @@
     <script>
         'use strict';
         var a = ['thahir', 'musthaq', 'rishi'];
-        function addnewlist()   {
+        function addnewlist(nm)   {
             var b = document.createElement('li');
             b.innerText = nm;
             var list = document.getElementById('ls1');
             list.appendChild(b);
         }
-
+        
         for (var i = 0; i < a.length; i++) {
             var name = a[i];
             addnewlist(name);
         }
-        // addnewlist('zdfghdg');
-
-
+        // addnewlist('');
+        // addnewlist('');
+       
 
 
 

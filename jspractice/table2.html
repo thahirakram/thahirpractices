@@ -1,25 +1,43 @@
 <html>
 <style>
+    tabledesign {
+        border-color : 1px solid blue;
+    }
 </style>
-
+    <div id='content'></div>
 <body>
     <script>
         var t = [
             { "name": "Mount Everest", "height": 8848, "country": "Nepal" },
             { "name": "Mount Rushmore", "height": 18, "country": "USA" }
         ];
-        function createTable() {
+        function createTable(data) {
             var table = document.createElement('table');
             table.className = 'tabledesign';
             var head = document.createElement('thead');
-            var body = document.createElemnt('tbody');
+            var body = document.createElement('tbody');
             var headrow = document.createElement('tr');
             ['Name', 'Height', 'country'].forEach(function (tab) {
                 var th = document.createElement('th');
                 th.appendChild(document.createTextNode(tab));
-                headrow.appenChild(th);
+                headrow.appendChild(th);
             });
-            head
+             head.appendChild(headrow);
+             table.appendChild(head);
+             data.forEach(function(tab){
+                 var tr = document.createElement('tr');
+                 for (var i in tab) {
+                     var td = document.createElement('td');
+                     td.appendChild(document.createTextNode(tab[i]))
+                     tr.appendChild(td);
+                 }
+                 body.appendChild(tr);
+             });
+             table.appendChild(body);
+             return table;
+        }
+        window.onload = function() {
+            document.getElementById('content').appendChild(createTable(t));
         }
 
     </script>

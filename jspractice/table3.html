@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <script>
+        var t = ['mohamed', 'thahir', 'akram'];
+        function DrawTable() {
+            var a = document.createElement('table');
+            a.className = 'tabledrawing';
+            
+            var b = document.createElement('tr');
+
+            a.appendChild(b);
+
+            t.forEach(function () {
+                var c = document.createElement('td');
+                b.appendChild(c);
+                
+            });
+        }
+
+        DrawTable()   
+    </script> -->
+    <script> 
+        var x = [['mohamed', 23], ['thahir', 34], ['akram', 45]];
+
+        function drawTable() {
+            var t = document.createElement('TABLE');
+            document.body.appendChild(t);
+            return t;
+        }
+
+        function createRow() {
+            var r = document.createElement('TR');
+            return r;
+        }
+
+        function createCol(vale) {
+            var c = document.createElement('TD');
+            c.innerText = vale;
+            return c;
+        }
+
+        const table = drawTable();
+        const tr = createRow();
+        const td1 = createCol('Name');
+        const td2 = createCol('Age');
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        table.appendChild(tr);
+
+        x.forEach(function (p) {
+            const name = p[0];
+            const age = p[1];
+            const tr = createRow();
+            const td1 = createCol(name);
+            const td2 = createCol(age);
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            table.appendChild(tr);
+        });
+
+
+    </script>
+</body>
+
+</html>

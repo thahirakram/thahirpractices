@@ -19,10 +19,13 @@
         document.getElementById('tab').appendChild(a);
 
         var b = document.createElement('TD');
-        var n = document.createTextNode('thahir');
-        b.appendChild(n);
-        document.getElementById('tabrow').appendChild(b);
-        var row =  Table.insertRow(0);
+        // var n = document.createTextNode('thahir');
+        // b.appendChild(n);
+        // document.getElementById('tabrow').appendChild(b);
+        var cell1 =  a.insertCell();
+        var cell2 = a.insertCell();
+        cell1.innerHTML = 'thahir'; 
+        cell2.innerHTML = 'ijbvhbv';
         }
         table();
     </script>
