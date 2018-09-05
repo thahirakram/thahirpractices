@@ -1,0 +1,41 @@
+<html>
+<style>
+    table,
+    td {
+        border: 1px solid greenyellow;
+    }
+</style>
+
+<body>
+    <script>
+        var x = ['mohamed', 'thahir', 'akram'];
+
+        function drawTable() {
+            var t = document.createElement('TABLE');
+            document.body.appendChild(t);
+            return t;
+        }
+
+        function createRow() {
+            var r = document.createElement('TR');
+            return r;
+        }
+
+        function createCol(vale) {
+            var c = document.createElement('TD');
+            c.innerText = vale;
+            return c;
+        }
+        const table = drawTable();
+
+        x.forEach(function (x) {
+            const tr = createRow();
+            const td = createCol(x);
+            tr.appendChild(td);
+            table.appendChild(tr);
+           
+        });
+    </script>
+</body>
+
+</html>
