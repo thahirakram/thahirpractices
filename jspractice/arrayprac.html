@@ -2,7 +2,7 @@
 
     <body>
         <p id="demo"></p>
-       <script>
+       <!-- <script>
         //    var array = Array.from("avkdfnvjvn");
         //     document.getElementById('demo').innerHTML =  array;
 
@@ -23,6 +23,49 @@
         //  function ech(value) {
         //      txt += value;    
         //  }
-       </script>
+       </script> -->
+
+
+<!-- <style type="text/css">
+    .custom-file-input{
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+    }
+    .custom-file-input input[type="file"]{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.custom-file-input input[type="file"]').change(function(e){
+            $(this).siblings('input[type="text"]').val(e.target.files[0].name);
+        });
+    });
+</script>
+</head>
+<body>
+    <form>
+        <div class="custom-file-input">
+            <input type="file">
+            <input type="text">
+            
+        </div> -->
+    
+
+
+     <div class="btn">
+            <input type="file" id="selectedFile" style="display: none;" />
+            <input type="button"  onclick="document.getElementById('selectedFile').click();">
+     </div>
+       
+     <input type="file" name="file" id="file" class="inputfile" />
+     <label for="file">Choose a file</label>
     </body>
 </html>
