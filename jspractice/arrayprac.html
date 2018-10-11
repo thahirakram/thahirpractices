@@ -105,17 +105,31 @@
         //     case "afsal":             
         //         document.write("3");
         //         break;
-        // }   
+        // } 
+
+        // var day = 0
+        // switch (day) {
+        //     case 1: 
+        //     document.write("2");
+        //     break;
+        //     case 2: 
+        //     document.write("3")
+        //     break;
+        //     default:
+        //     document.write("no match");
+        //     break;
+        // }
+
         //     for (i=1; i<=5; i++) {
         // document.write(i + "<br />");
+
         //  var i = 0;
-        //  while(i <= 10){
+        //  while(i <= 10) {
         //      document.write(i + "<br>");
         //      i++;
         //  }
 
         // var x = 2;
-
         //   while(x <= 10) {
         //       document.write(x + "<br />");
         //       x += 2;
@@ -145,13 +159,11 @@
         //     }
         //   sum = sum + i;  
         // }
-
         // document.write(sum);
 
         // function sayHello(name) {
         //     alert("Hi, " + name);
         // }
-
         // sayHello("nsme");
         // sayHello("Sarah");
         // sayHello("John");
@@ -163,8 +175,126 @@
 
         //     var x = myFunction(5, 6);
         //     document.write(x);
-        var user = prompt("Please enter your name");
-        alert(user);
+
+        // var user = prompt("Please enter your name");
+        // alert(user);
+
+        // var result = confirm("Do you really want to leave this page?");
+        // if (result == true) {
+        //     alert("Thanks for visiting");
+        // }
+        // else {
+        //     alert("Thanks for staying with us");
+        // }
+
+        // test
+        // function test(number) {
+        //     while (number < 5) {
+        //         number++;
+        //     }
+        //     return number;
+        // }
+        // alert(test(0));
+
+        // function test(a, b) {
+        //     if (a > b) {
+        //         return a * b;
+        //     } else {
+        //         return b / a;
+        //     }
+        // }
+        // alert(test(5, 15)); 
+
+        // var person = {
+        //     name: "John", age: 31,
+        //     favColor: "green", height: 183
+        // };
+        // var x = person.age;
+        // var y = person['age'];
+
+
+        // document.write(x);
+        // document.write(y);
+
+        // Once you have an object constructor, you can use the new keyword to create new objects of the same type.     
+        // function person(name, age, color) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.favColor = color;
+        // }
+        // var x = new person("John", 42, "green");
+        // document.write(x.age);
+
+
+
+        // <!-- 
+        // This allows you to create only a single object.
+        // Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type.
+        // The standard way to create an "object type" is to use an object constructor function. -->
+
+
+
+        // A method is a function, belonging to an object. It can be referenced using the this keyword.
+        // The this keyword is used as a reference to the current object, meaning that you can access the objects properties and methods using it.
+
+        // function person(name, age) {
+        //     this.name= name;
+        //     this.age= age;
+        //     this.changename = function (name) {
+        //         this.name = name;
+        //     }
+        // }   
+        // var p = new person( 'john', 53);
+        //     p.changename("david");
+        //    document.write(p.name); 
+
+
+        //     var person = {
+        //         name: "John", age: 42, favColor: "green"
+        //     };
+        // document.write(person.age);
+
+        //diifuclut to understand
+
+        // function person(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.yearOfBirth = bornYear;
+        // }
+        // function bornYear() {
+        //     return 2016 - this.age;
+        // }
+
+        // var p = new person("A", 22);
+
+        // document.write(p.yearOfBirth());
+
+// returns undefined
+//         var courses = new Array("HTML", "CSS", "JS");
+//         document.write(courses[10]);
+// //Outputs "undefined"
+
+
+// ways for creating arrays
+// var courses = new Array(3);
+// courses[0] = "HTML";
+// courses[1] = "CSS";
+// courses[2] = "JS";
+// document.write(courses);
+
+
+// Let's create a program that will ask the user to input a number and alert its square root.
+// var a = prompt("enetre", "");
+// var b = Math.sqrt(a);
+// alert(n + b );
+
+// w3 practice
+    // var myarr = ('thahir');
+    // document.getElementById('demo').innerHTML = myarr;
+
+var x = [1,8,2,3,5];
+
+document.getElementById('demo').innerHTML = x;
     </script>
 </body>
 
