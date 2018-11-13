@@ -1,0 +1,32 @@
+<html>
+<script>
+    // usual
+    // function greet(message) {
+    //     document.write(message);
+    // }
+    // function greeter(name, age) {
+    //     return name + age;
+    // }
+    // var message = greeter("james", 78);
+    // greet(message);
+
+    //better with closures below examples
+
+    function greeter(name, age) {
+
+        var message = name + " " + age;
+
+        return function greet() {
+
+            document.write(message);
+        };
+    }
+
+    // generate the closure
+    var thahir = greeter("Thahir", 20);
+
+    // use the closure
+    thahir();
+</script>
+
+</html>
