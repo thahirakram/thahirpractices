@@ -1,0 +1,18 @@
+<html>
+
+<head>
+
+</head>
+<script>
+    var promise1 = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            resolve('testing');
+        }, 300);
+    });
+    promise1.then(function (value) {
+        document.write(value);
+    });
+    console.log(promise1);
+</script>
+
+</html>
