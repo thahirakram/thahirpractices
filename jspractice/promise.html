@@ -3,14 +3,18 @@
 <head>
 
 </head>
+<p id="demo"></p>
+
 <script>
-    var promise1 = new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve('testing');
-            // reject(new Error('Error Occured'))
-            // throw new Error("error testing");
-        }, 3000);
-    });
+    // var promise1 = new Promise(function (resolve, reject) {
+    //     setTimeout(function () {
+    //         resolve('testing');
+    //         // reject(new Error('Error Occured'))
+    //         // throw new Error("error testing");
+    //     }, 3000);
+    // });
+
+    // instead of this we are using async await method
     // let temp;
     // promise1
     //     .then(
@@ -27,21 +31,32 @@
     // console.log(promise1);
 
 
-    async function aa() {
-        try {
+    // async function aa() {
+    //     try {
 
-            const value = await promise1;
-            console.log(value);
-            
-        } catch (error) {
-            console.log(error);
+    //         const value = await promise1;
+    //         console.log(value);
 
-        }
-    }
+    //     } catch (error) {
+    //         console.log(error);
 
-    aa()
+    //     }
+    // }
 
+    // aa()
+ 
+// array practice
+//  var fruits = ['nsjhs', 'jjdjd'];
+//  var x = fruits.entries();
 
+//  document.getElementById('demo').innerHTML = x.next().value;  
+
+// var fruits = ["Banana", "Orange", "Apple", "Mango", "tahirh", "jhjhjh"];
+// document.getElementById('demo').innerHTML = fruits;
+// document.getElementById('demo').innerHTML = fruits.copyWithin(2,1,3);
+
+var txt = "";
+var numbers = [45, 4, 9, 26, 25];
+document.getElementById('demo').innerHTML = numbers.forEach(numbers);
 </script>
-
 </html>
