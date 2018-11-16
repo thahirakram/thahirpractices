@@ -7,12 +7,41 @@
     var promise1 = new Promise(function (resolve, reject) {
         setTimeout(function () {
             resolve('testing');
-        }, 300);
+            // reject(new Error('Error Occured'))
+            // throw new Error("error testing");
+        }, 3000);
     });
-    promise1.then(function (value) {
-        document.write(value);
-    });
-    console.log(promise1);
+    // let temp;
+    // promise1
+    //     .then(
+    //         function (value) {
+    //             temp = value
+    //             console.log(value);
+    //         }
+    //     )
+    //     .catch(
+    //         function (value) {
+    //             console.log(value);
+    //         }
+    //     );
+    // console.log(promise1);
+
+
+    async function aa() {
+        try {
+
+            const value = await promise1;
+            console.log(value);
+            
+        } catch (error) {
+            console.log(error);
+
+        }
+    }
+
+    aa()
+
+
 </script>
 
 </html>
