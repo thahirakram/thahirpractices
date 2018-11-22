@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+    <style>
+        .heading {
+            color: lightcoral;
+        }
+    </style>
+</head>
 <body>
     <!-- <img src="pic_bulboff.gif" width="100" height="180"> -->
 
     <button onclick="myFunction()">click</button>
     <p id="demo"></p>
+    <h1>javascript</h1>
     <script>
         // to find attribute name
         // function myFunction() {
@@ -29,14 +36,25 @@
 
         // returns true if the attr has been specified
         // function myFunction() {
-            // var t = document.getElementsByTagName("BUTTON")[0];
-            // var x = t.attributes[0].specified;
-            // document.getElementById('demo').innerHTML = x;
+        //     var t = document.getElementsByTagName("P")[0];
+        //     var x = t.attributes[0].specified;
+        //     document.getElementById('demo').innerHTML = x;
         // }
 
         //getNamedItem() method returns atrr node with specified name form naemdnodemap object
+        // function myFunction() {
+        //     var t = document.getElementsByTagName("BUTTON")[0];
+        //     var x = t.attributes.getNamedItem("onclick").value;
+        //     document.getElementById('demo').innerHTML = x;
+        // }
         
-        
+        // creating class and 
+        function  myFunction() {
+            var a = document.getElementsByTagName("H1")[0];
+            var h = document.createAttribute("class");
+            h.value = "heading";
+            a.attributes.setNamedItem(h);
+        }
     </script>
 </body>
 
