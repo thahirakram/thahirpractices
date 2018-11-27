@@ -73,7 +73,7 @@
         // }
         // document.getElementById("demo").innerHTML = txt;
 
-        // object accesors
+        // getters and setters allows you to get and set properties via methods.
         // var tahi = {
         //     fname: "dsjd",
         //     lname: "gvgsgb",
@@ -86,32 +86,77 @@
         // document.getElementById('demo').innerHTML = tahi.language;
 
 
-        // using getters and setters, it allows equal syntax for properties and methods,
-        var obj = {
-            count: 0,
-            get reset() {
-                this.counter = 0;
-            },
-            get increment() {
-                this.count++;
-            },
-            get decrement() {
-                this.count--;
-            },
-            set add(value) {
-                this.count += value;
-            },
-            set subtract(value) {
-                this.count -= value;
-            }
-        };
+        // setting the value here we used ttl property to set value of the title property
+        // var item = {
+        //     fname : "nlm",
+        //     lname : "method for setting property",  
+        //     title : "setter",
+        //     set ttl(value) {
+        //         this.title = value;
+        //     }
+        // };
+        // // set a property
+        // item.ttl = "changed";
+        // document.getElementById("demo").innerHTML = item.title;
+        
 
-        obj.reset;
-        obj.add = 5;
-        obj.subtract = 1;
-        obj.increment;
-        obj.decrement;
-        document.getElementById('demo').innerHTML = obj.count;
+
+        // getter
+        // var thahir = { 
+        //     t : "jfkjf",
+        //     u : "vkjfb",
+        //     v : "uudvj",
+        //     get h() {
+        //          return this.v;
+        //     }
+        // };
+        //  document.getElementById('demo').innerHTML = thahir.h;
+
+
+        
+        // using getters and setters, it allows equal syntax for properties and methods,
+        // var obj = {
+        // //     count: 0,
+        // //     get reset() {
+        // //         this.count = 6;
+        // //     },
+        // //     get increment() {
+        // //         this.count++;
+        // //     },
+        // //     get decrement() {
+        // //         this.count--;
+        // //     },
+        // //     set add(value) {
+        // //         this.count += value;
+        // //     },
+        // //     set subtract(value) {
+        // //         this.count -= value;
+        // //     }
+        // // };
+
+        // // obj.reset;
+        // // obj.add = 5;
+        // // obj.subtract = 1;
+        // // obj.increment;
+        // // obj.decrement;
+        // // document.getElementById('demo').innerHTML = obj.count;
+
+        // constructor function for person objects
+        // function person (first, last, age, eye) {
+        //     this.fname = first;
+        //     this.lname = last;
+        //     this.age = age;
+        //     this.eyecolor = eye;
+        // }    
+
+        // // create 2 person objects
+        // var tahir = new person("which", "is", 20, "function");
+
+        // // we can add properties like this
+        // tahir.fullname = "kjbsckjbkjbd";
+        // document.getElementById('demo').innerHTML = tahir.age;
+
+
     </script>
 </body>
 
