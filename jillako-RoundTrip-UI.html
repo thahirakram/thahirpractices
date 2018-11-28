@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <style>
+    .flight-search-result-panel .panel-body {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .flight-search-result-panel .btn-select-flight {
+      border-radius: 2px;
+      background-color: #f6c957;
+      color: #465b83;
+      border-color: #f3b51d;
+      font-weight: bold;
+    }
+
+    .flight-search-result-panel .flight-logo-small {
+      max-height: 40px;
+      max-width: 40px;
+    }
+
+    .flight-search-result-panel .result-segments {
+      height: 60px;
+    }
+
+    .flight-search-result-panel .result-segments .row,
+    .flight-search-result-panel .result-segments .col {
+      height: 100%;
+    }
+
+    .flight-search-result-panel .vertically-aligned {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+    }
+    @media only screen and (max-width: 766px) {
+      .mobile-text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="panel panel-default flight-search-result-panel no-border-radius">
+      <div class="row border mt-5">
+        <div class="panel-body col-md-9 border-right">
+          <!-- Flight Itenery Display Rows -->
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="row no-padding no-margin">
+                <div class="col-md-3 result-segments">
+                  <img class="flight-logo-small" src="6E.png" style="padding-top: 8px;">
+                  <p><small>6E <span>-</span> 95</small></p>
+                </div>
+                <div class="col-md-6 result-segments col-xs-12">
+                  <div class="row">
+                    <div class="col-md-5 text-center">
+                      <span class="vertically-aligned">BLR</span>
+                      <span class="text-bold vertically-aligned">07:20</span>
+                    </div>
+                    <div class="col-md-2">
+                      <i class="fa fa-arrows-h vertically-aligned" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-5 text-center">
+                      <span class="text-bold vertically-aligned">09:50</span>
+                      <span class="vertically-aligned">DXB</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center col-md-3 result-segments duration-details hidden-xs hidden-sm">
+                  <span class="vertically-aligned">4 h 5 m</span>
+                  <strong class="vertically-aligned">Non stop</strong>
+                </div>
+              </div>
+              <div class="col-md-12 border-bottom"></div>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <div class="row no-padding no-margin">
+                  <div class="col-md-3 result-segments">
+                    <img class="flight-logo-small" src="6E.png" style="padding-top: 8px;">
+                    <p><small>6E <span>-</span> 95</small></p>
+                  </div>
+                  <div class="col-md-6 result-segments col-xs-12">
+                    <div class="row">
+                      <div class="col-md-5 text-center">
+                        <span class="vertically-aligned">BLR</span>
+                        <span class="text-bold vertically-aligned">07:20</span>
+                      </div>
+                      <div class="col-md-2">
+                        <i class="fa fa-arrows-h vertically-aligned" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-md-5 text-center">
+                        <span class="text-bold vertically-aligned">09:50</span>
+                        <span class="vertically-aligned">DXB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center col-md-3 result-segments duration-details hidden-xs hidden-sm">
+                    <span class="vertically-aligned">4 h 5 m</span>
+                    <strong class="vertically-aligned">Non stop</strong>
+                  </div>
+                </div>
+                <div class="col-md-12 border-bottom"></div>
+              </div>
+           
+
+
+          </div>
+        </div>
+        <div class="panel-body col-sm-12 col-md-3">
+          <div class="text-right" style="padding-right: 1em;">
+            <p class="mobile-text">
+              <span>INR</span>
+              <h3 class="text-jillako-blue text-primary mobile-text" style="margin-top: -25px; font-weight: bold;">21,899</h3>
+            </p>
+            <div class="mobile-text pb-2">
+              <a class="btn btn-warning btn-select-flight">Select
+                Flight</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
