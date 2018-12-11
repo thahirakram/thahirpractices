@@ -334,7 +334,7 @@
     //     document.getElementById('demo').innerHTML = x;
     // }
 
-    
+  
     </script>
 </body>
 
@@ -367,3 +367,29 @@
 // }
 // slider.src = images[num];
 // } -->
+
+
+const location = new Observable((observer) => {
+
+
+    const {next, error} = observer});
+    let watchId;
+
+    if('geolocation' in navigator) {
+        watchId = navigator.geolocation.watchPosition(next, error);
+    } else {
+        error ('geolocation not available');
+    }
+
+
+    return {unsubscribe() {navigator.geolocation.clearWatch(watchId);}};
+};
+
+const locationsSubscription = locations.subscribe({
+    next(position) {console.log('currrent Position: ', position);},
+    error(msg) { console.log('Error Getting Location', msg); }
+});
+
+
+
+seTimeout(() => { locationSubscription.unSubscribe(); }.1000);

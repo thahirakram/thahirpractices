@@ -7,24 +7,40 @@
 </head>
 
 <body>
+
+  <!-- function for hiding and showing content  -->
+  <!-- <button id="hide">Hide</button>
+  <button id="show">Show</button>
+  <p>click to hide and show tha bar</p>
   <script>
-    $(document).ready(function(){
-      $("button").click(function(){
-        $.post("demo_test_post.asp",
-        {
-          name: "dlkndf",
-          city: "djhvbf"
-        },
-        function(data,status) {
-          alert("data" + data + status);
-        });
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        $("p").hide();
+      });
+      $("#show").click(function () {
+        $("p").show();
       });
     });
 
+  </script> -->
 
 
+  <!-- we can define the same class for differtent elements and we can selct the elements using classes specifically -->
+  <!-- <h1 class="intro">This is heading paragraph</h1>
+  <p class="intro">This is paragraph tag and if u click this it will be hidden</p>
+  <button>click</button>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("p.intro").hide();
+      });
+    });
+  </script> -->
+<button>start animation</button>
+<script>
 
-  </script>
+</script>
+
 </body>
 
 </html>
