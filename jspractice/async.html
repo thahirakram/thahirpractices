@@ -1,0 +1,19 @@
+<script>
+
+ function resolve() {
+     return new promise(resolve => {
+         setTimeout(()=>{
+             resolve('resolved');
+         }, 2000);
+     });
+ }
+
+
+ async function callres() {
+     console.log('calling');
+     var call = await resolve();
+     console.log(call); 
+ }
+
+  callres();
+</script>

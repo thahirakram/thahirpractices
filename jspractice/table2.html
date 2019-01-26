@@ -1,10 +1,11 @@
 <html>
 <style>
     tabledesign {
-        border-color : 1px solid blue;
+        border-color: 1px solid blue;
     }
 </style>
-    <div id='content'></div>
+<div id='content'></div>
+
 <body>
     <script>
         var t = [
@@ -20,23 +21,24 @@
             ['Name', 'Height', 'country'].forEach(function (tab) {
                 var th = document.createElement('th');
                 th.appendChild(document.createTextNode(tab));
-                headrow.appendChild(th);
+                headrow.appendChild(th);l>
+                
             });
-             head.appendChild(headrow);
-             table.appendChild(head);
-             data.forEach(function(tab){
-                 var tr = document.createElement('tr');
-                 for (var i in tab) {
-                     var td = document.createElement('td');
-                     td.appendChild(document.createTextNode(tab[i]))
-                     tr.appendChild(td);
-                 }
-                 body.appendChild(tr);
-             });
-             table.appendChild(body);
-             return table;
+            head.appendChild(headrow);
+            table.appendChild(head);
+            data.forEach(function (tab) {
+                var tr = document.createElement('tr');
+                for (var i in tab) {
+                    var td = document.createElement('td');
+                    td.appendChild(document.createTextNode(tab[i]))
+                    tr.appendChild(td);
+                }
+                body.appendChild(tr);
+            });
+            table.appendChild(body);
+            return table;
         }
-        window.onload = function() {
+        window.onload = function () {
             document.getElementById('content').appendChild(createTable(t));
         }
 
