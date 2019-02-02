@@ -16,9 +16,7 @@
     class rishi extends thahir {
         contructor(length) {
             super(length, length);
-            this.name =  Square;
-    
-            
+            this.name =  Square;  
         }
     }
 
