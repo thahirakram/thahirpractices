@@ -1,0 +1,33 @@
+<html>
+<script>
+
+    // getter
+    // var obj = {
+
+    //     log: ['a', 'b', 'c'],
+    //     get new() {
+    //         if (this.log.length == 0) {
+    //             return undefined;
+    //         }
+    //         return this.log[this.log.length - 1];
+    //     }
+
+    // }
+    // document.write(obj.new);
+
+    // setter
+    var lang = {
+        set current(name) {
+            this.log.push(name)
+        },
+        log: []
+    }
+
+    lang.current = 'en';
+    lang.current = 'fa';
+
+    console.log(lang.log);
+
+</script>
+
+</html>
